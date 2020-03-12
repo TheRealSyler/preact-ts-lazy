@@ -1,7 +1,7 @@
 import { Configuration } from 'webpack';
 import { Configuration as Dev } from 'webpack-dev-server';
-import { resolve } from 'path';
-import HtmlWebpackPlugin = require('html-webpack-plugin');
+const resolve = require('path').resolve;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 interface C extends Dev, Configuration {}
 
@@ -34,4 +34,4 @@ const config: C = {
   }
 };
 
-export default config;
+module.exports = config;

@@ -1,1 +1,1 @@
-not working ts preact lazy loading example.
+Working ts preact lazy loading example.
